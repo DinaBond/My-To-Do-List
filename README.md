@@ -11,7 +11,7 @@ Open index.html in the browser of your choice.
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 ## History
-TODO: Write history
+29.11.2023
 ## Credits
 Dina Bondarchuk
 ## License
