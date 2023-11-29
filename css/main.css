@@ -1,0 +1,127 @@
+
+/* selects all tags and resets the default values to 0 */
+/* We don't want to rely on the browser defaults*/
+
+.hidden {
+    display: none;
+}
+
+header {
+    background-color: white;
+}
+header img {
+    margin-left: 400px;
+}
+
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    /* These properties will be inhertied by the children elements*/
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.container {
+    width: 1440px;
+    height: 1000px;
+    margin: 0px auto;
+    background-image: url(../images/background.png);
+    justify-content: center;
+}
+
+
+main {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+header > h1 {
+    text-align: center;
+    padding: 10px;
+}
+/* applies to all articles */
+
+article {
+    width: 400px;
+    border: 4px solid white;
+    border-radius: 2px;
+    margin: 30px;
+    margin-left: 400px;
+    text-align: left;
+}
+
+article h2 {
+    color: #D81159;
+    padding: 4px 8px; /* top and bottom left and right */
+}
+
+article:first-of-type {
+    border: 4px solid #D81159; 
+} 
+/* This id has a higher s[pecifity dso it bests out the articles selector*/
+#inprogress{
+    border: 4px solid #8F3985;
+}
+
+#inprogress h2{
+    color: #8F3985;
+}
+
+#done {
+    border: 4px solid #22223B;
+}
+
+#done h2 {
+    color: #22223B;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+padding: 6px 8px;
+text-transform: uppercase;
+}
+
+.todo li:nth-child(odd) {
+    background-color: rgba(216, 17, 89, 0.2);
+}
+
+.inprogress li:nth-child(odd) {
+    background-color: rgba(143, 57, 133, .2);
+}
+
+.done li:nth-child(odd) {
+    background-color: rgba(34, 34, 59, .2);
+}
+
+
+input[type="checkbox"]:checked + span::after {
+content:"\1F44D";
+width: 25px;
+height:25px;
+border-radius: 50%;
+background-color: green;
+border: 4px solid #20b320;
+font-size: 14px;
+animation: fadeIn 0.7s;
+}
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.mark {
+    border-radius: 20px;
+   padding: 1%;
+    background-color:  rgba(164, 186, 183);
+}
